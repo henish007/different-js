@@ -1,0 +1,10 @@
+// img tag in src value get and print js
+
+jQuery(document).ready(function(){
+  jQuery(".product-img .more-view-wrapper .swiper-button").click(function(){
+    // this var in image value store
+    var smallImgSrc = jQuery(".product-img .more-view-wrapper li.swiper-slide-active img").attr('src');
+    // this line in second pacle in value set
+    jQuery(".product-img .quickview-featured-image img.quick-image").attr('src',smallImgSrc);
+  })
+ })
